@@ -4,13 +4,31 @@ document.querySelector("#eyes").classList.add("hide");
 document.querySelector("#teeth").classList.add("hide");
 document.querySelector("#nails").classList.add("hide");
 
-document.querySelector("#eyesbtn").addEventListener("click", eyesRed);
+document.querySelector("#mark2").addEventListener("click", eyesRed);
 function eyesRed() {
   console.log("Eyes are now red");
   document.querySelector("#eyes").classList.remove("hide");
   document.querySelector("#teeth").classList.add("hide");
   document.querySelector("#nails").classList.add("hide");
-  document.querySelector("#feature").textContent = "Red eyes";
+  document.querySelectorAll("#mark .cls-1").forEach((el) => {
+    el.style.fill = "#f8cf00";
+  });
+  document.querySelectorAll("#mark .cls-4").forEach((el) => {
+    el.style.fill = "#ff0000";
+  });
+  document.querySelectorAll("#mark2 .cls-1").forEach((el) => {
+    el.style.fill = "#ff0000";
+  });
+  document.querySelectorAll("#mark2 .cls-4").forEach((el) => {
+    el.style.fill = "#f8cf00";
+  });
+  document.querySelectorAll("#mark3 .cls-1").forEach((el) => {
+    el.style.fill = "#f8cf00";
+  });
+  document.querySelectorAll("#mark3 .cls-4").forEach((el) => {
+    el.style.fill = "#ff0000";
+  });
+  document.querySelector(".info-text h2").textContent = "Red eyes";
   document.querySelector("#danger-level").textContent = "Danger level: 4";
   document.querySelector("#efficiency").textContent =
     "Commonly seen in real and fake humans, beware. If only this symptom is showing be cautious, but it is not definitive on its own. Recent intake of caffeine can impact test results.";
@@ -18,13 +36,31 @@ function eyesRed() {
     "<strong>Natural Reasons</strong><ul><li>Lack of sleep</li><li>Dry air</li><li>Allergies</li><li>Contacts</li></ul>";
 }
 
-document.querySelector("#teethbtn").addEventListener("click", teethPerfect);
+document.querySelector("#mark").addEventListener("click", teethPerfect);
 function teethPerfect() {
   console.log("Teeth are now perfect");
   document.querySelector("#teeth").classList.remove("hide");
   document.querySelector("#eyes").classList.add("hide");
   document.querySelector("#nails").classList.add("hide");
-  document.querySelector("#feature").textContent = "Perfect teeth";
+  document.querySelectorAll("#mark .cls-1").forEach((el) => {
+    el.style.fill = "#ff0000";
+  });
+  document.querySelectorAll("#mark .cls-4").forEach((el) => {
+    el.style.fill = "#f8cf00";
+  });
+  document.querySelectorAll("#mark2 .cls-1").forEach((el) => {
+    el.style.fill = "#f8cf00";
+  });
+  document.querySelectorAll("#mark2 .cls-4").forEach((el) => {
+    el.style.fill = "#ff0000";
+  });
+  document.querySelectorAll("#mark3 .cls-1").forEach((el) => {
+    el.style.fill = "#f8cf00";
+  });
+  document.querySelectorAll("#mark3 .cls-4").forEach((el) => {
+    el.style.fill = "#ff0000";
+  });
+  document.querySelector(".info-text h2").textContent = "Perfect teeth";
   document.querySelector("#danger-level").textContent = "Danger level: 6";
   document.querySelector("#efficiency").textContent =
     "Perfectly aligned white teeth. Humans tend to have slight yellow tinted teeth with crooked imperfections. Beware of recent dentist appointments. Recent smoking can impact test results.";
@@ -32,13 +68,31 @@ function teethPerfect() {
     "<strong>Natural Reasons</strong><ul><li>Recent dental appointment</li><li>Dentures</li><li>Past braces</li><li>No smoking</li></ul>";
 }
 
-document.querySelector("#nailsbtn").addEventListener("click", nailsDirty);
+document.querySelector("#mark3").addEventListener("click", nailsDirty);
 function nailsDirty() {
   console.log("Nails are now dirty");
   document.querySelector("#nails").classList.remove("hide");
   document.querySelector("#eyes").classList.add("hide");
   document.querySelector("#teeth").classList.add("hide");
-  document.querySelector("#feature").textContent = "Dirty nails";
+  document.querySelectorAll("#mark .cls-1").forEach((el) => {
+    el.style.fill = "#f8cf00";
+  });
+  document.querySelectorAll("#mark .cls-4").forEach((el) => {
+    el.style.fill = "#ff0000";
+  });
+  document.querySelectorAll("#mark2 .cls-1").forEach((el) => {
+    el.style.fill = "#f8cf00";
+  });
+  document.querySelectorAll("#mark2 .cls-4").forEach((el) => {
+    el.style.fill = "#ff0000";
+  });
+  document.querySelectorAll("#mark3 .cls-1").forEach((el) => {
+    el.style.fill = "#ff0000";
+  });
+  document.querySelectorAll("#mark3 .cls-4").forEach((el) => {
+    el.style.fill = "#f8cf00";
+  });
+  document.querySelector(".info-text h2").textContent = "Dirty nails";
   document.querySelector("#danger-level").textContent = "Danger level: 7";
   document.querySelector("#efficiency").textContent =
     "Unkempt nails are a severe sign of a fake human; proceed with caution. Recent handwashing can impact the test results.";

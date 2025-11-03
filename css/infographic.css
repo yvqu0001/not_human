@@ -46,6 +46,10 @@
   visibility: hidden;
 }
 
+svg {
+  padding: 3rem;
+}
+
 /* #danger-level {
   font-size: 20px !important;
 } */
