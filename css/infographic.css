@@ -50,6 +50,12 @@ svg {
   padding: 3rem;
 }
 
+#mark,
+#mark2,
+#mark3 {
+  cursor: pointer;
+}
+
 /* #danger-level {
   font-size: 20px !important;
 } */
