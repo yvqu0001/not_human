@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -37,10 +37,120 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Contact</h2>
+          <p>
+            If you have suspicion that someone you know is a fake human; contact
+            us immediately!
+          </p>
         </article>
-        <form id="webform"></form>
+        <form aria-label="contant-form" id="webform">
+          <div class="form-group">
+            <label for="first_name">First name</label>
+            <input
+              aria-describedby="error-message"
+              type="text"
+              id="first_name"
+              name="first_name"
+              required
+            />
+            <p class="error-message">Please enter first name</p>
+          </div>
+
+          <div class="form-group">
+            <label for="last_name">Last name</label>
+            <input
+              aria-describedby="error-message"
+              type="text"
+              id="last_name"
+              name="last_name"
+              required
+            />
+            <p class="error-message">Please enter last name</p>
+          </div>
+
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select
+              aria-describedby="error-message"
+              name="gender"
+              id="gender_select"
+              required
+            >
+              <option value="">--</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+            <p class="error-message">Please select a gender</p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              aria-describedby="error-message"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+            <p class="error-message">Please enter a valid email adress</p>
+          </div>
+
+          <div class="form-group">
+            <label for="phone_number">Phone number</label>
+            <input
+              aria-describedby="error-message"
+              type="tel"
+              id="phone_number"
+              name="phone_number"
+              required
+            />
+            <p class="error-message">Please enter a valid phone number</p>
+          </div>
+
+          <fieldset
+            aria-describedby="symptom-error"
+            class="form-group"
+            data-required="true"
+          >
+            <legend>Symptoms</legend>
+
+            <label>
+              <input type="checkbox" name="symptoms" value="red_eye_symptom" />
+              Red eyes
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="symptoms"
+                value="perfect_teeth_symptom"
+              />
+              Perfect teeth
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="symptoms"
+                value="dirty_nails_symptom"
+              />
+              Dirty nails
+            </label>
+            <p id="symptom-error" hidden>Please select minimum 1 symptom</p>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="comment">Comment</label>
+            <p class="form-requirement">Other symptoms, encounter, etc.</p>
+            <textarea
+              aria-describedby="form-requirement"
+              id="comment"
+              name="comment"
+            ></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
@@ -76,6 +186,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
   </body>
 </html>

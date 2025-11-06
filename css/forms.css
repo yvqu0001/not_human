@@ -30,3 +30,99 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+
+/* MY CSS */
+#form-section {
+  background-color: #ffffff;
+  padding: 2rem 5rem;
+}
+
+#form-info h2 {
+  color: #fffae2;
+  background-color: black;
+  justify-self: center;
+  display: block;
+}
+
+input {
+  border: none;
+  padding: 0.5rem;
+  background-color: #dbe2f5;
+}
+
+button {
+  border: none;
+  background-color: #ff4b00;
+  color: #fffae2;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.error-message {
+  color: #ff0000;
+  display: none;
+}
+
+/*form layout*/
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.5rem;
+}
+
+label:has(:input) {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-self: start;
+}
+
+:focus-visible {
+  outline: 2px solid #6f90eb;
+  outline-offset: 1px;
+}
+
+button:hover {
+  background: #fffae2;
+  color: #ff4b00;
+}
+
+button:active {
+  scale: 0.98;
+}
+
+.form-group:has(:required) {
+  label::after {
+    content: "*";
+    color: #ff0000;
+  }
+}
+
+.form-group[data-required="true"]:has(input) {
+  legend::after {
+    content: "*";
+    color: #ff0000;
+  }
+}
+
+.form-group:has(:user-invalid) {
+  .error-message {
+    display: block;
+  }
+  input {
+    outline: solid 1px #ff0000;
+  }
+}
+
+.form-group:has(:user-valid) {
+  .error-message {
+    display: none;
+  }
+  input {
+    outline: solid 1px green;
+  }
+}
