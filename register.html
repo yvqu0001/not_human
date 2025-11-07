@@ -68,23 +68,7 @@
             <p class="error-message">Please enter last name</p>
           </div>
 
-          <div class="form-group">
-            <label for="gender">Gender</label>
-            <select
-              aria-describedby="error-message"
-              name="gender"
-              id="gender_select"
-              required
-            >
-              <option value="">--</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
-            </select>
-            <p class="error-message">Please select a gender</p>
-          </div>
-
-          <div class="form-group">
+          <div id="form-group-email" class="form-group">
             <label for="email">Email</label>
             <input
               aria-describedby="error-message"
@@ -108,8 +92,25 @@
             <p class="error-message">Please enter a valid phone number</p>
           </div>
 
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select
+              aria-describedby="error-message"
+              name="gender"
+              id="gender_select"
+              required
+            >
+              <option value="">--</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+            <p class="error-message">Please select a gender</p>
+          </div>
+
           <fieldset
             aria-describedby="symptom-error"
+            id="form-group-symptoms"
             class="form-group"
             data-required="true"
           >
@@ -140,7 +141,7 @@
             <p id="symptom-error" hidden>Please select minimum 1 symptom</p>
           </fieldset>
 
-          <div class="form-group">
+          <div id="form-group-comment" class="form-group">
             <label for="comment">Comment</label>
             <p class="form-requirement">Other symptoms, encounter, etc.</p>
             <textarea
@@ -149,7 +150,7 @@
               name="comment"
             ></textarea>
           </div>
-          <button type="submit">Send</button>
+          <button id="submit_button" type="submit">Send</button>
         </form>
       </section>
       <section id="form-summary">
