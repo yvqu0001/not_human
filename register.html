@@ -92,7 +92,7 @@
             <p class="error-message">Please enter a valid phone number</p>
           </div>
 
-          <div class="form-group">
+          <div id="form-group-gender" class="form-group">
             <label for="gender">Gender</label>
             <select
               aria-describedby="error-message"
@@ -117,25 +117,17 @@
             <legend>Symptoms</legend>
 
             <label>
-              <input type="checkbox" name="symptoms" value="red_eye_symptom" />
+              <input type="checkbox" name="symptoms" value="red_eyes" />
               Red eyes
             </label>
 
             <label>
-              <input
-                type="checkbox"
-                name="symptoms"
-                value="perfect_teeth_symptom"
-              />
+              <input type="checkbox" name="symptoms" value="perfect_teeth" />
               Perfect teeth
             </label>
 
             <label>
-              <input
-                type="checkbox"
-                name="symptoms"
-                value="dirty_nails_symptom"
-              />
+              <input type="checkbox" name="symptoms" value="dirty_nails" />
               Dirty nails
             </label>
             <p id="symptom-error" hidden>Please select minimum 1 symptom</p>
@@ -143,7 +135,7 @@
 
           <div id="form-group-comment" class="form-group">
             <label for="comment">Comment</label>
-            <p class="form-requirement">Other symptoms, encounter, etc.</p>
+            <p id="form-requirement">Other symptoms, encounter, etc.</p>
             <textarea
               aria-describedby="form-requirement"
               id="comment"
@@ -156,7 +148,35 @@
       <section id="form-summary">
         <h2>Summary</h2>
         <article>
-          <p class="placeholder">Opsummering</p>
+          <!-- <p class="placeholder">Opsummering</p> -->
+          <p>
+            <span class="summary_label">First name: </span
+            ><span id="first_name_output" class="summary_output"></span>
+          </p>
+          <p>
+            <span class="summary_label">Last name: </span
+            ><span id="last_name_output" class="summary_output"></span>
+          </p>
+          <p>
+            <span class="summary_label">Email: </span
+            ><span id="email_output" class="summary_output"></span>
+          </p>
+          <p>
+            <span class="summary_label">Phone number: </span
+            ><span id="phone_output" class="summary_output"></span>
+          </p>
+          <p>
+            <span class="summary_label">Gender: </span
+            ><span id="gender_output" class="summary_output"></span>
+          </p>
+          <p>
+            <span class="summary_label">Symptoms: </span
+            ><span id="symptoms_output" class="summary_output"></span>
+          </p>
+          <p>
+            <span class="summary_label">Comment: </span
+            ><span id="comment_output" class="summary_output"></span>
+          </p>
         </article>
       </section>
     </main>
