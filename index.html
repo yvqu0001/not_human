@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/popover.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -50,7 +51,17 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               magnam ducimus ea, sed minima asperiores.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details class="accordion" name="accordion">
+              <summary class="cta_btn">Se mere</summary>
+              <div class="accordion_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam esse sunt dignissimos a iusto non, tempore pariatur,
+                  temporibus officiis earum saepe eum inventore mollitia natus!
+                  Sed ut commodi veniam excepturi.
+                </p>
+              </div>
+            </details>
           </div>
         </article>
         <article class="daily_card">
@@ -61,17 +72,28 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               magnam ducimus ea, sed minima asperiores.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details class="accordion" name="accordion">
+              <summary class="cta_btn">Se mere</summary>
+              <div class="accordion_content">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Commodi, sed assumenda? Eius eaque cum quisquam ducimus
+                  necessitatibus impedit maiores perferendis, quo laboriosam
+                  repellendus, sequi dolores. Consectetur debitis culpa vitae
+                  unde.
+                </p>
+              </div>
+            </details>
           </div>
         </article>
       </section>
       <section id="breaking">
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
+          <h3>New symptom discovered</h3>
+          <p>They're adapting faster than we expected.</p>
           <img src="" alt="news_img" />
           <button popovertarget="popup1" class="cta_btn">Læs mere</button>
-          <div popover id="popup1">
+          <div popover id="popup1" class="popup">
             <h3>NEW SYMPTOM DISCOVERED</h3>
             <p>They’re adapting faster than we expected.</p>
             <p>
@@ -94,11 +116,11 @@
           </div>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
+          <h3>Recent deaths under investigation</h3>
+          <p>The symptoms aren't the only thing spreading.</p>
           <img src="" alt="news_img" />
           <button popovertarget="popup2" class="cta_btn">Læs mere</button>
-          <div popover id="popup2">
+          <div popover id="popup2" class="popup">
             <h3>RECENT DEATHS UNDER INVESTIGATION</h3>
             <p>The symptoms aren’t the only thing spreading.</p>
             <p>
@@ -123,11 +145,11 @@
           </div>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
+          <h3>Solar warning issued</h3>
+          <p>Stay inside. Stay unchanged.</p>
           <img src="" alt="news_img" />
           <button popovertarget="popup3" class="cta_btn">Læs mere</button>
-          <div popover id="popup3">
+          <div popover id="popup3" class="popup">
             <h3>SOLAR WARNING ISSUED</h3>
             <p>Stay inside. Stay unchanged.</p>
             <p>
