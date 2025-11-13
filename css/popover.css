@@ -39,3 +39,11 @@ summary::marker {
   padding: 1rem;
   margin: 0;
 }
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  img {
+    padding: 0.5rem;
+  }
+}
