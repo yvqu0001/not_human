@@ -1,0 +1,41 @@
+/* article */
+[popover] {
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+
+  &:popover-open {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+  }
+
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.cta_btn {
+  border: none;
+}
+
+.popup {
+  border: none;
+  padding: 1rem;
+}
+
+/* teaser */
+summary::marker {
+  content: none;
+}
+
+.accordion {
+  background-color: #ffa680;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.accordion_content p {
+  padding: 1rem;
+  margin: 0;
+}

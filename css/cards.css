@@ -24,7 +24,8 @@
 }
 .daily_text .cta_btn {
   justify-self: left;
-  width: 80%;
+  /* width: 80%; */
+  width: 100%;
 }
 .daily_img {
   width: 100%;
