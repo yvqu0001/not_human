@@ -11,9 +11,14 @@
 }
 
 html {
+  color-scheme: light;
   font-family: var(--font-family-sans);
   color: var(--color-text);
   background-color: var(--color-bg);
+}
+
+html.dark {
+  color-scheme: dark;
 }
 
 header {
@@ -117,6 +122,17 @@ nav a {
   font-weight: var(--font-weight-medium);
   width: max-content;
   margin-left: 1rem;
+}
+
+#dark_mode_button {
+  margin-left: 1.5rem;
+  max-width: 150px;
+  background-color: var(--color-link-bg);
+  color: var(--color-text);
+  font-size: var(--followup-text-size);
+  padding: 0.3rem;
+  border-radius: var(--border-radius-links);
+  border: none;
 }
 
 /* Global menu */

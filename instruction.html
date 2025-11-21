@@ -45,6 +45,7 @@
             </svg>
           </a>
         </div>
+        <button id="dark_mode_button">Dark mode</button>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
@@ -65,22 +66,22 @@
           <defs>
             <style>
               .cls-1 {
-                fill: #f8cf00;
+                fill: light-dark(#f8cf00, #d6ba2f);
               }
 
               .cls-2 {
-                fill: #fff;
+                fill: light-dark(#fff, #d4d4d4);
               }
 
               .cls-2,
               .cls-3 {
-                stroke: #000;
+                stroke: light-dark(#000, #1e1e1e);
                 stroke-miterlimit: 10;
               }
 
               .cls-3,
               .cls-4 {
-                fill: red;
+                fill: light-dark(red, #da3e44);
               }
             </style>
           </defs>
@@ -245,7 +246,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
     <script src="js/instructions.js"></script>
   </body>
 </html>

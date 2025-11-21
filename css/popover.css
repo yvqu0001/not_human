@@ -30,7 +30,7 @@ summary::marker {
 }
 
 .accordion {
-  background-color: #ffa680;
+  background-color: light-dark(#ffa680, #3f3f41);
   border-radius: 5px;
   width: 80%;
 }
